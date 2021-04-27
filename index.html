@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <meta name="Description" content="assigment 3">
+    <meta name="Keywords" content="Flex Box, Grid, Form, Video tutorial">
+    <meta name="Author" content="Marco Stevanella">
+    <link href="assets/img/favicon_1.ico" rel="icon">
+    <!--<link href="assets/css/normalize.css" rel="stylesheet">-->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/menu.css" rel="stylesheet">
+    <title>Assigment 3</title>
+</head>
+<body>
+<div id="wrapper">
+<header>
+    <nav id="menu">
+        <ul>
+            <li><a href="#form1">Application Form</a></li>
+            <li><a href="#videos">HTML5 Video</a></li>
+            <li><a href="#form2">HTML5 Forms Elements</a></li>
+            <li><a href="#tutorial">5 Minutes Tutorial</a></li>
+            <li><a href="#map">Image Mapping</a></li>
+        </ul>
+    </nav>
+        <div class="headIntro">
+            <div><h1>Welcome to Assigment 3</h1></div>
+            <div><p>This website have the purpose to demonstrate my progresses during
+            the first year at George Brown</p></div>
+            <div>
+                <button onclick="window.location.href='#tutorial'">Go see my tutorial</button>
+            </div>
+        </div>
+</header>
+<main>
+    <article>
+        <h2>Application Form</h2>
+        <form id="form1" method="post">
+        <fieldset>
+            <legend>Application Form</legend>
+            <div class="appFormlabel">
+                <label for="fullName">Full Name</label>
+            </div>
+            <div class="appForminput">
+                <input type="text" id="fullName" name="fullName" size="20" required>
+            </div>
+            <div class="appFormlabel">
+                <label for="email">email</label>
+            </div>
+            <div class="appForminput">
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="appFormlabel">
+                <label>Gender</label>
+            </div>
+            <div class="appForminput">
+                <input type="radio" name="gender" value="female">Female
+                <input type="radio" name="gender" value="male">Male
+                <input type="radio" name="gender" value="genderqueer">Genderqueer
+            </div>
+            <div class="appFormlabel">
+                <label>Nationality</label>
+            </div>
+            <div class="appForminput">
+                <select name="Country">
+                    <option value="1">US</option>
+                    <option value="2">Germany</option>
+                    <option value="3">Italy</option>
+                    <option value="4">Spain</option>
+                    <option value="5">Bulgaria</option>
+                </select>
+            </div>
+            <div class="appFormlabel">
+                <label>Skills</label>
+            </div>
+            <div class="appForminput">
+                <input type="checkbox" name="asp.net" value="asp.net">Asp.Net
+                <input type="checkbox" name="jquery" value="jquery">jQuery
+                <input type="checkbox" name="mvc" value="mvc">MVC
+            </div>
+            <div class="appFormlabel">
+                <label>Post Applying For</label>
+            </div>
+            <div class="appForminput">
+                <input type="radio" name="postFor" value="trainee">Trainee
+                <input type="radio" name="postFor" value="team_leader">Team Leader
+                <input type="radio" name="postFor" value="software_engineer">Software Engineer
+                <input type="radio" name="postFor" value="project_manager">Project Manager
+            </div>
+            <div class="appFormlabel">
+                <label for="resume">Upload Resume:</label>
+            </div>
+            <div class="appForminput">
+                <input type="file" id="resume" name="resume" accept=".doc, .docx, .pdf">
+            </div>
+            <div class="appFormlabel">
+                <label for="pasteres">Paste your Resume</label>
+            </div>
+            <div class="appForminput">
+                <textarea name="pasteres" id="pasteres" cols="30" rows="5"></textarea>
+            </div>
+            <div class="appForminput">
+                <input type="checkbox" id="agree" name="agree" value="agree" required>
+            </div>
+            <div class="appFormlabel">
+                <label for="agree">I agree to your terms and condition.</label>
+            </div>
+            <div class="appForminput">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </fieldset>
+        </form>
+    </article>
+    <div id="videos">
+        <h2>My Favorite Instrument to Play</h2>
+        <br>
+        <ul>
+            <li>
+                <div class="card">
+                <video controls>
+                <source src="assets/video/video1.mp4" type="video/mp4">
+                </video>
+                    <div class="card-text">
+                <h3>Guitar</h3>
+                <p>I Love playing. I started to study guitar when I was 13!</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="card">
+                    <video controls>
+                        <source src="assets/video/video2.mp4" type="video/mp4">
+                    </video>
+                    <div class="card-text">
+                        <h3>Piano</h3>
+                        <p>I used to play piano, this instrument is very important to understand the harmony</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="card">
+                    <video controls>
+                        <source src="assets/video/video3.mp4" type="video/mp4">
+                    </video>
+                    <div class="card-text">
+                        <h3>Drum</h3>
+                        <p>I love playing a drum, it teaches me to keep the groove in the right rhythm</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <article>
+        <h2>HTML 5 Forms</h2>
+        <form id="form2" method="post">
+            <fieldset>
+                <legend>HTML 5 Forms</legend>
+                <div class="appFormlabel">
+                    <label for="title">Title</label>
+                </div>
+                <div class="appForminput">
+                    <input type="text"
+                           id="title"
+                           name="title"
+                           placeholder="Select one or enter your own"
+                           pattern="[a-z]+"
+                           required>
+                </div>
+                <div class="appFormlabel">
+                    <label for="name">Name</label>
+                </div>
+                <div class="appForminput">
+                    <input type="text"
+                           id="name"
+                           name="name"
+                           placeholder="Marco Stevanella"
+                           pattern="[^0-1]+"
+                           required>
+                </div>
+                <div class="appFormlabel">
+                    <label for="phone">Phone Number</label>
+                </div>
+                <div class="appForminput">
+                    <input type="tel"
+                           id="phone"
+                           name="phone"
+                           placeholder="1+ 1234567890"
+                           pattern="[0-9]+">
+                </div>
+                <div class="appFormlabel">
+                    <label for="url">Your Website</label>
+                </div>
+                <div class="appForminput">
+                    <input type="url"
+                           id="url"
+                           name="url"
+                           placeholder="www.yoursite.com">
+                </div>
+                <div class="appFormlabel">
+                    <label for="email2">email</label>
+                </div>
+                <div class="appForminput">
+                    <input type="email"
+                           id="email2"
+                           name="email"
+                           required>
+                </div>
+                <div class="appFormlabel">
+                    <label for="num">Number of Items</label>
+                </div>
+                <div class="appForminput">
+                    <input type="number"
+                           id="num"
+                           min="1"
+                           max="10">
+                </div>
+                <div class="appFormlabel">
+                    <label for="range">Quantity Slider</label>
+                </div>
+                <div class="appForminput">
+                    <input type="range"
+                           id="range"
+                           name="range"
+                           min="0"
+                           max="100"
+                           step="10"> 1m (in 10cm increments)
+                </div>
+                <div class="appFormlabel">
+                    <label for="date">Delivery Date</label>
+                </div>
+                <div class="appForminput">
+                    <input type="date"
+                           id="date"
+                           name="date"
+                           min="2020-12-01">
+                </div>
+
+                <div class="appFormlabel">
+                    <label for="time">Time of delivery</label>
+                </div>
+                <div class="appForminput">
+                    <input type="time"
+                           id="time"
+                           name="time"
+                           step="1800">
+                </div>
+                <div class="appFormlabel">
+                    <label for="color">Color of the Item</label>
+                </div>
+                <div class="appForminput">
+                    <input type="color"
+                           id="color">
+                </div>
+                <div class="appForminput">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+            </fieldset>
+        </form>
+    </article>
+    <div id="tutorial">
+        <h2>Video Tutorial</h2>
+        <iframe width="412" height="350" src="https://www.youtube.com/embed/EM-xoP67AQ4?controls=o"></iframe>
+        <h3>Check out my Video Tutorial!</h3>
+        <p>You will be able to learn how to make a menu with a Flex Box in 6 minutes!</p>
+    </div>
+    <div>
+        <h2>You don't know Pink Floyd? Now You Will!</h2>
+        <div id="map">
+            <p>Click on the faces to learn about them</p>
+            <img src="assets/img/pinkfloyd.jpg" alt="Pink Floyd" usemap="#pinkfloyd">
+            <map name="pinkfloyd">
+                <area shape="poly" coords="8,281,98,208,121,63,249,3,358,55,373,198,372,240,376,527" alt="Nick Mason" title="Nick Mason" href="https://en.wikipedia.org/wiki/Nick_Mason" target="_blank">
+                <area shape="poly" coords="373,234,450,202,498,14,661,4,711,142,691,217,615,212,539,262,505,350,475,466,471,526" alt="David Gilmour" title="David Gilmour" href="https://en.wikipedia.org/wiki/David_Gilmour" target="_blank">
+                <area shape="poly" coords="484,525,511,462,511,315,554,251,616,220,670,228,717,261,757,344,762,465,753,523" alt="Richard Wright" title="Richard Wright" href="https://en.wikipedia.org/wiki/Richard_Wright_(musician)" target="_blank">
+                <area shape="poly" coords="703,225,718,174,776,125,849,124,902,185,899,311,1014,421" alt="Roger Waters" title="Roger Waters" href="https://en.wikipedia.org/wiki/Roger_Waters" target="_blank">
+            </map>
+        </div>
+    </div>
+</main>
+<footer>
+    <p>&#169;2020 Marco Stevanella</p>
+    <script src="https://my.gblearn.com/js/loadscript.js"></script>
+</footer>
+</div>
+</body>
+</html>

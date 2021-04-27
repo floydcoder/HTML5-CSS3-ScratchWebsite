@@ -1,0 +1,19 @@
+#wrapper{
+    display: grid;
+    grid-auto-columns: minmax(1fr, auto);
+    grid-auto-rows: minmax(232px,auto);
+    grid-gap: 32px;
+}
+fieldset{
+    display: grid;
+    grid-template-columns: 120px 180px;
+    margin: 2px;
+    row-gap: 5px;
+    column-gap: 5px;
+}
+legend{
+    grid-column-start: span 2;
+}
+.appFormlabel{
+    text-align: right;
+}

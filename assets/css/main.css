@@ -1,0 +1,160 @@
+body{
+    font-family: 'Noto Sans', sans-serif;
+    background-color: aqua;
+}
+#wrapper{
+    display: grid;
+    grid-template-columns: auto;
+    /*grid-auto-rows: minmax(232px,auto);*/
+    grid-auto-columns: minmax(512px,auto);
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+#wrapper header{
+    display: flex;
+    justify-content: center;
+    background-image: url("../img/header.jpg");
+    border: 3px solid white;
+}
+.headIntro{
+    display: flex;
+    flex-direction: column;
+    margin-top: 75px;
+}
+.headIntro div h1{
+    font-size: 22px;
+}
+.headIntro > div {
+    color: whitesmoke;
+    width: auto;
+    padding: 10px 10px;
+    margin: 5px 5px;
+    text-align: center;
+    line-height: 25px;
+    justify-content: center;
+    font-weight: bold;
+}
+main > div,article{
+    border: 1px solid black;
+    margin: 32px 32px;
+    padding: 32px 32px;
+    background-color: lightseagreen;
+}
+main h2{
+    float: top;
+    margin: 8px 8px;
+    color: black;
+    text-align: center;
+}
+#form1{
+    width: 512px;
+    margin: auto auto;
+}
+#form1 fieldset{
+    display: grid;
+    grid-template-columns: 120px 270px;
+    margin: 2px;
+    row-gap: 5px;
+    column-gap: 5px;
+    background-color: lightblue;
+}
+#form1 legend{
+    grid-column-start: span 2;
+    background-color: yellow;
+    border-radius: 16px;
+    border: 2px solid yellow;
+}
+#form1.appFormlabel{
+    text-align: right;
+}
+#form1 div ~ label,input,select{
+    margin: 3px 3px;
+}
+#form1 div:last-child {
+    display:flex;
+    flex-direction: row;
+    margin: 25px 170px;
+}
+#videos ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+#videos li{
+    margin: 8px 8px;
+    background-color: lightblue;
+    color: black;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+#videos video{
+    width: 100%;
+    height: 225px;
+
+}
+#videos ul li p{
+    color: black;
+    font-weight: bold;
+    width: 300px;
+}
+.card-text{
+    padding: 1em;
+}
+#tutorial iframe{
+    display: block;
+    margin: auto auto;
+}
+#tutorial p,h3{
+    text-align: center;
+}
+#form2{
+    width: 512px;
+    margin: auto auto;
+}
+#form2 fieldset{
+    display: grid;
+    grid-template-columns: 120px 270px;
+    margin: 2px;
+    row-gap: 5px;
+    column-gap: 5px;
+    background-color: lightblue;
+}
+#form2 legend{
+    grid-column-start: span 2;
+    background-color: yellow;
+    border-radius: 16px;
+    border: 2px solid yellow;
+}
+#form2.appFormlabel{
+    text-align: right;
+}
+#form2 div ~ label,input,select{
+    margin: 3px 3px;
+}
+#form2 div:last-child{
+    display:flex;
+    flex-direction: row;
+    margin: 25px 170px;
+}
+#map p{
+    text-align: center;
+    font-weight: bold;
+    color: pink;
+}
+#map img{
+    display: block;
+    border: 3px solid black;
+    margin: auto;
+}
+footer{
+    height: 50px;
+}
+footer p{
+    text-align: right;
+    font-weight: bold;
+}
+
+
+
+

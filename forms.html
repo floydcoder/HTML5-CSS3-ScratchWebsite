@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/css/formstyle.css">
+</head>
+<body>
+<div id="wrapper">
+    <fieldset>
+        <legend>HTML 5 Forms</legend>
+        <div class="appFormlabel">
+            <label for="title">Title</label>
+        </div>
+        <div class="appForminput">
+            <input type="text"
+                   id="title"
+                   name="title"
+                   placeholder="Select one or enter your own"
+                   pattern="[a-z]+"
+                   required>
+        </div>
+        <div class="appFormlabel">
+            <label for="name">Name</label>
+        </div>
+        <div class="appForminput">
+            <input type="text"
+                   id="name"
+                   name="name"
+                   placeholder="Marco Stevanella"
+                   pattern="[a-z]+"
+                   required>
+        </div>
+        <div class="appFormlabel">
+            <label for="phone">Phone Number</label>
+        </div>
+        <div class="appForminput">
+            <input type="tel"
+                   id="phone"
+                   name="phone"
+                   placeholder="1+ 1234567890"
+                   pattern="[0-9]+">
+        </div>
+        <div class="appFormlabel">
+            <label for="url">Your Website</label>
+        </div>
+        <div class="appForminput">
+            <input type="url"
+                   id="url"
+                   name="url"
+                   placeholder="www.yoursite.com">
+        </div>
+        <div class="appFormlabel">
+            <label for="email2">email</label>
+        </div>
+        <div class="appForminput">
+            <input type="email"
+                   id="email2"
+                   name="email"
+                   required>
+        </div>
+        <div class="appFormlabel">
+            <label for="num">Number of Items</label>
+        </div>
+        <div class="appForminput">
+            <input type="number"
+                   id="num"
+                   min="1"
+                   max="10">
+        </div>
+        <div class="appFormlabel">
+            <label for="range">Quantity Slider</label>
+        </div>
+        <div class="appForminput">
+            <input type="range"
+                   id="range"
+                   name="range"
+                   min="0"
+                   max="100"
+                   step="10"> 1m (in 10cm increments)
+        </div>
+        <div class="appFormlabel">
+            <label for="date">Delivery Date</label>
+        </div>
+        <div class="appForminput">
+            <input type="date"
+                   id="date"
+                   name="date"
+                   min="2020-12-01">
+        </div>
+
+        <div class="appFormlabel">
+            <label for="time">Time of delivery</label>
+        </div>
+        <div class="appForminput">
+            <input type="time"
+                   id="time"
+                   name="time"
+                   step="1800">
+        </div>
+         <div class="appFormlabel">
+             <label for="color">Color of the Item</label>
+        </div>
+        <div class="appForminput">
+            <input type="color"
+                   id="color">
+        </div>
+        <div class="appForminput">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </fieldset>
+</div>
+</body>
+</html>
+
+
+
+<!--<form id="form1">
+    <fieldset>
+        <legend>Application Form</legend>
+        <table>
+            <tbody>
+            <tr>
+                <th><label for="fullName">Full Name</label></th>
+                <td><input type="text" id="fullName" name="fullName" size="20" required></td>
+            </tr>
+            <tr>
+                <th><label for="email">email</label></th>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <th><label>Gender</label></th>
+                <td>
+                    <input type="radio" name="gender" value="female">Female
+                    <input type="radio" name="gender" value="male">Male
+                    <input type="radio" name="gender" value="genderqueer">Genderqueer
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label>Nationality</label>
+                </th>
+                <td>
+                    <select name="Country">
+                        <option value="1">US</option>
+                        <option value="2">Germany</option>
+                        <option value="3">Italy</option>
+                        <option value="4">Spain</option>
+                        <option value="5">Bulgaria</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label>Skills</label>
+                </th>
+                <td>
+                    <input type="checkbox" name="asp.net" value="asp.net">Asp.Net
+                    <input type="checkbox" name="jquery" value="jquery">jQuery
+                    <input type="checkbox" name="mvc" value="mvc">MVC
+                </td>
+            </tr>
+            <tr>
+                <th><label>Post Applying For</label></th>
+                <td>
+                    <input type="radio" name="postFor" value="trainee">Trainee
+                    <input type="radio" name="postFor" value="team_leader">Team Leader
+                    <input type="radio" name="postFor" value="software_engineer">Software Engineer
+                    <input type="radio" name="postFor" value="project_manager">Project Manager
+                </td>
+            </tr>
+            <tr>
+                <th><label for="resume">Upload Resume:</label></th>
+                <td><input type="file" id="resume" name="resume" accept=".doc, .docx, .pdf"></td>
+            </tr>
+            <tr>
+                <th><label for="pasteres">Paste your Resume</label></th>
+                <td>
+                    <textarea name="pasteres" id="pasteres" cols="30" rows="5"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" id="agree" name="agree" value="agree" required>
+                    <label for="agree">I agree to your terms and condition.</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="submit">
+                    <button type="reset">Reset</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </fieldset>
+</form> -->

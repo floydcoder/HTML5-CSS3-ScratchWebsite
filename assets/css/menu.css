@@ -1,0 +1,31 @@
+#menu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-flow: column;
+    background-color: silver;
+    position: fixed;
+    border: 2px solid black;
+    border-radius: 16px;
+    width: 1300px;
+
+}
+#menu ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 5px 5px;
+    margin: 0;
+}
+#menu li{
+    width: 200px;
+    margin: 0 15px 15px 0;
+    padding: 5px 5px;
+    text-align: center;
+
+}
+#menu a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
